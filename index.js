@@ -92,9 +92,11 @@ async function run() {
       //=======================>>>>>>>   Portfolio Pages GET API connect with [ usePortfolio.js Hooks ]
       app.get("/Portfolio", async (req, res) => {
         const findDataStr = req.query.allDesign;
+        console.log(findDataStr + " line number 95");
         const findData = findDataStr.split(',').map(value => value.trim().toLowerCase());
         if (findDataStr === "") {
           const result = await sixSecAllProjectData.find().toArray();
+          console.log(result + " 99");
           res.send(result);
           return;
         }    
