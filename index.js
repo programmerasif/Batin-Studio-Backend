@@ -12,7 +12,7 @@ app.use(
   })
 );
 app.use(express.json());
-var uri = "mongodb://fozlerabbi:ArqAegN9Zqv3pZqQ@ac-rjynr1b-shard-00-00.ai568b9.mongodb.net:27017,ac-rjynr1b-shard-00-01.ai568b9.mongodb.net:27017,ac-rjynr1b-shard-00-02.ai568b9.mongodb.net:27017/?ssl=true&replicaSet=atlas-116jfm-shard-0&authSource=admin&retryWrites=true&w=majority"
+const uri = "mongodb://fozlerabbi:ArqAegN9Zqv3pZqQ@ac-rjynr1b-shard-00-00.ai568b9.mongodb.net:27017,ac-rjynr1b-shard-00-01.ai568b9.mongodb.net:27017,ac-rjynr1b-shard-00-02.ai568b9.mongodb.net:27017/?ssl=true&replicaSet=atlas-116jfm-shard-0&authSource=admin&retryWrites=true&w=majority"
 // const uri = "mongodb+srv://fozlerabbi:ArqAegN9Zqv3pZqQ@cluster0.ai568b9.mongodb.net/?retryWrites=true&w=majority";
 const client = new MongoClient(uri, {
   serverApi: {
